@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Cáo Phong Thủy Khoa Học - Xem Thiên Văn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sepia-paper': '#fdfcf8',
+                        'accent-gold': '#9c7c3c',
+                        'accent-blue': '#1e293b',
+                        'charcoal': '#1a1a1a',
+                    },
+                    fontFamily: {
+                        serif: ['"Times New Roman"', 'Times', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+        body {
+            background-color: #e5e7eb;
+            font-family: "Times New Roman", Times, serif;
+            color: #1a1a1a;
+            line-height: 1.8;
+        }
+
+        .document-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fdfcf8;
+            padding: 80px 100px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            border: 1px solid #e2e2e2;
+        }
+
+        @media (max-width: 768px) {
+            .document-container {
+                margin: 0;
+                padding: 40px 20px;
+                box-shadow: none;
+            }
+        }
+
+        h1, h2, h3, h4 {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .report-header {
+            border-bottom: 2px solid #9c7c3c;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .company-name {
+            font-size: 2.5rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #1e293b;
+        }
+
+        .website-link {
+            font-size: 1rem;
+            color: #9c7c3c;
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        .user-info-grid {
+            background-color: #f8f8f4;
+            padding: 25px;
+            border-left: 4px solid #1e293b;
+            margin-bottom: 40px;
+        }
+
+        .report-title {
+            text-align: center;
+            font-size: 1.8rem;
+            text-decoration: underline;
+            text-underline-offset: 8px;
+            margin-bottom: 50px;
+            color: #1e293b;
+        }
+
+        .content-body p {
+            text-align: justify;
+            margin-bottom: 1.5rem;
+        }
+
+        .signature-block {
+            margin-top: 80px;
+            text-align: right;
+            border-top: 1px solid #e2e2e2;
+            padding-top: 30px;
+        }
+
+        .signature-font {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            margin-bottom: 0;
+            color: #1e293b;
+        }
+
+        .stamp {
+            display: inline-block;
+            border: 2px solid #b91c1c;
+            color: #b91c1c;
+            padding: 5px 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transform: rotate(-10deg);
+            margin-bottom: 10px;
+            opacity: 0.8;
+            font-size: 0.8rem;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #9c7c3c, transparent);
+            margin: 40px 0;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="py-10">
+
+    <main class="document-container">
+        <!-- Header Section -->
+        <header class="report-header flex flex-col md:flex-row justify-between items-baseline">
+            <div>
+                <h1 class="company-name m-0">Xem Thiên Văn</h1>
+                <a href="www.phamhoanganhtokens.com" target="_blank" class="website-link">www.phamhoanganhtokens.com</a>
+            </div>
+            <div class="text-right text-gray-500 text-sm mt-4 md:mt-0">
+                Mã số báo cáo: XT-2026-PHA83<br>
+                Ngày lập: 24/05/2024
+            </div>
+        </header>
+
+        <!-- User Information Block -->
+        <section class="user-info-grid">
+            <h2 class="text-lg uppercase tracking-widest border-b border-gray-200 pb-2 mb-4 mt-0 text-accent-blue">Thông Tin Khách Hàng</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <p><strong>Họ và tên:</strong> Phạm Hoàng Anh</p>
+                <p><strong>Năm sinh:</strong> 1983 (Quý Hợi)</p>
+                <p><strong>Giới tính:</strong> Nam</p>
+                <p><strong>Nội dung yêu cầu:</strong> Xem phong thủy năm 2026</p>
+            </div>
+        </section>
+
+        <!-- Report Title -->
+        <h2 class="report-title uppercase">BÁO CÁO PHÂN TÍCH PHONG THỦY KHOA HỌC 2026</h2>
+
+        <!-- Main Content Area -->
+        <article class="content-body">
+            <p class="font-bold text-center italic text-gray-600 mb-8">Dành riêng cho: Phạm Hoàng Anh (Quý Hợi - Đại Hải Thủy) <br> Năm phân tích: 2026 (Bính Ngọ - Thiên Hà Thủy)</p>
+
+            <h3 class="text-xl text-accent-gold border-l-4 border-accent-gold pl-4">1. Phân tích Kinh Dịch: Quẻ "Thủy Hỏa Ký Tế" (Sự Hoàn Tất & Tiệm Tiến)</h3>
+            <p>Dựa trên sự tương tác giữa bản mệnh Quý Hợi (Thủy) và năm Bính Ngọ (Hỏa), quẻ chủ đạo cho vận trình của bạn trong năm 2026 là quẻ <strong>Thủy Hỏa Ký Tế</strong> (Quẻ số 63 trong Kinh Dịch).</p>
+            <ul>
+                <li><strong>Logic Dịch học:</strong> Khảm (Thủy) ở trên, Ly (Hỏa) ở dưới. Nước chảy xuống, lửa bốc lên, tạo ra sự giao thoa năng lượng hoàn hảo – tượng trưng cho việc công việc đã đi vào quỹ đạo và gặt hái kết quả.</li>
+                <li><strong>Lời khuyên chiến lược:</strong> "Ký tế" nghĩa là đã xong, đã qua sông. Tuy nhiên, logic của Dịch học là "Vật cực tất phản". Khi mọi thứ đã ổn định, đó là lúc dễ phát sinh sự chủ quan. Bạn cần tập trung vào việc duy trì và tối ưu hóa những gì đang có, tránh mạo hiểm thay đổi quá đà trong trạng thái chưa chuẩn bị.</li>
+            </ul>
+
+            <h3 class="text-xl text-accent-gold border-l-4 border-accent-gold pl-4">2. Phong Thủy Ngũ Hành: Tương quan Thiên Hà Thủy & Đại Hải Thủy</h3>
+            <ul>
+                <li><strong>Bản mệnh:</strong> Quý Hợi (Nước biển lớn).</li>
+                <li><strong>Lưu niên:</strong> Bính Ngọ (Nước mưa từ trời).</li>
+                <li><strong>Tương tác:</strong> Thủy gặp Thủy tạo thành thế <strong>Bình Hòa</strong>, lưỡng Thủy thành giang. Đây là một tín hiệu tích cực, cho thấy bạn dễ tìm được tiếng nói chung trong các mối quan hệ xã hội.</li>
+                <li><strong>Xung khắc Can-Chi:</strong> Thiên can Quý (Thủy) khắc Bính (Hỏa) - đây là thế "Khắc xuất" (mình khắc chế được ngoại cảnh). Đòi hỏi bạn tiêu tốn nhiều trí lực hơn để kiểm soát tình hình, nhưng kết quả vẫn nằm trong tầm tay.</li>
+                <li><strong>Định hướng không gian:</strong> Ưu tiên sử dụng các yếu tố thuộc <strong>Kim</strong> (trắng, xám, ánh kim) để thúc đẩy vòng lặp tương sinh cho bản mệnh Thủy.</li>
+            </ul>
+
+            <h3 class="text-xl text-accent-gold border-l-4 border-accent-gold pl-4">3. Hệ thống Sao Chiếu Mệnh & Chu kỳ Tam Tai (Năm thứ 2)</h3>
+            <ul>
+                <li><strong>Sao chiếu mệnh: Thái Âm (Cát tinh).</strong> Chủ về danh lợi, hỷ sự và được quý nhân giúp đỡ. Tài chính năm nay có dấu hiệu khởi sắc rõ rệt.</li>
+                <li><strong>Hạn tuổi: Diêm Vương.</strong> Cảnh báo về việc quản lý áp lực (stress) và sức khỏe tim mạch, huyết áp. Đối với việc mưu cầu tài lộc, hạn này thực tế có lợi cho nam giới Quý Hợi.</li>
+                <li><strong>Trọng điểm Tam Tai:</strong> Năm 2026 là <strong>năm giữa</strong> hạn Tam Tai. Tránh dừng lại đột ngột hoặc thay đổi hoàn toàn các dự án đang triển khai.</li>
+                <li><strong>Chiến thuật:</strong> "Thủ thế trong sự tiến công". Tận dụng cát khí của sao Thái Âm để đẩy mạnh dự án cũ, nhưng thận trọng với các cơ hội mới mang tính rủi ro cao.</li>
+            </ul>
+
+            <h3 class="text-xl text-accent-gold border-l-4 border-accent-gold pl-4">4. Ngày Đại Cát & Thời điểm Vàng năm 2026</h3>
+            <p>Xác định dựa trên dữ liệu thiên văn 2026, các thời điểm dưới đây mang năng lượng hỗ trợ mạnh mẽ nhất cho bản mệnh Quý Hợi:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-50 p-6 border border-gray-100 italic">
+                <ul class="mb-0 list-none ml-0">
+                    <li class="font-bold text-accent-blue">Giai đoạn Xuân - Hạ:</li>
+                    <li>• 05/03/2026 (Ngày Mậu Dần)</li>
+                    <li>• 20/05/2026 (Ngày Giáp Ngọ)</li>
+                    <li>• 19/07/2026 (Ngày Giáp Ngọ)</li>
+                </ul>
+                <ul class="mb-0 list-none ml-0">
+                    <li class="font-bold text-accent-blue">Giai đoạn Thu - Đông:</li>
+                    <li>• 02/08/2026 (Ngày Mậu Thân)</li>
+                    <li>• 01/10/2026 (Ngày Mậu Thân)</li>
+                    <li>• 16/12/2026 (Ngày Giáp Tý)</li>
+                </ul>
+            </div>
+            <p class="mt-4"><strong>Tiết Đông Chí 2026 (22/12/2026):</strong> Thời điểm "Nhất dương sinh", lý tưởng để hoạch định chiến lược dài hạn cho năm kế tiếp.</p>
+
+            <hr>
+
+            <h3 class="text-2xl text-center uppercase tracking-widest text-accent-blue">Tổng kết từ Opal Master Architect</h3>
+            <p>Năm 2026 của Phạm Hoàng Anh là sự kết hợp giữa thử thách Tam Tai và phần thưởng từ sao Thái Âm. Hãy hành động như nước biển lớn – sâu sắc, bao dung nhưng quyết liệt. Không nên bỏ dở công việc đang tốt, giữ kỷ luật thép với tài chính để vượt qua áp lực năm giữa Tam Tai.</p>
+        </article>
+
+        <!-- Signature Footer -->
+        <footer class="signature-block">
+            <div class="stamp">Chữ ký số hợp lệ</div>
+            <p class="mb-1 text-sm uppercase tracking-tighter text-gray-500">Giám đốc điều hành</p>
+            <p class="signature-font">TS. Phạm Hoàng Anh</p>
+            <p class="font-bold text-gray-800">Director</p>
+            <p class="text-xs text-gray-400 mt-4">Hệ thống phân tích Thiên văn & Kinh Dịch - Opal Master Architect</p>
+        </footer>
+    </main>
+
+    <script>
+        // Subtle micro-animation for the document entrance
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.document-container');
+            container.style.opacity = '0';
+            container.style.transform = 'translateY(20px)';
+            container.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+            
+            setTimeout(() => {
+                container.style.opacity = '1';
+                container.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
+
